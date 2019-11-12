@@ -4,6 +4,7 @@ services:
 
 before install:
   - docker build -t SaonMustafi/docker-react -f Dockerfile.dev .
+  
 
 scripts:
   - docker run SaonMustafi/docker npm test -- --coverage
