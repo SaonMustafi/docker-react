@@ -5,8 +5,8 @@ services:
 
 before install:
   - echo Starting build
-  - docker build -t saonmustafi/docker-react -f Dockerfile.dev .
+  - docker build -t shangarab123/docker-react -f Dockerfile.dev .
   - echo bhuild has been completed
 
 scripts:
-  - docker run saonmustafi/docker-react npm test -- --coverage
+  - docker run shangarab123/docker-react npm test -- --coverage
