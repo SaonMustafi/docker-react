@@ -3,9 +3,9 @@ services:
   - docker
 
 before install:
-  - docker build -t SaonMustafi/docker-react -f Dockerfile.dev .
+  - docker build -t saonmustafi/docker-react -f Dockerfile.dev .
 
 language: node_js
 
 scripts:
-  - docker run SaonMustafi/docker-react npm test -- --coverage
+  - docker run saonmustafi/docker-react npm test -- --coverage
