@@ -1,5 +1,7 @@
 sudo: required
 language: node_js
+node_js:
+  - "stable"
 services:
   - docker
 
@@ -9,3 +11,8 @@ before install:
 scripts:
   - docker run -e CI=true shangarab123/docker-react npm run test
 
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: docker-react
+  env: DockerReact-env
